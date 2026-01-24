@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em dispositivos diferentes, ou apenas altere o zoom do navegador.</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="imagens/img-celular.png" type="image/png">
+        <source media="(max-width: 1020px)" srcset="imagens/img-tablet.png" type="image/png">
+        <img src="imagens/img-pc.png" alt="foto flexivel">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5!</p>
+
+    <h2>Primeira maneira</h2>
+    <audio src="midia/mascafe-casarosa.mp3" controls loop preload="metadata"></audio>
+    <!--MP3 WAV OGG-->
+
+    <h2>Segunda maneira</h2>
+    <audio controls loop preload="metadata">
+        <source src="midia/mascafe-casarosa.mp3" type="audio/mpeg">
+        <source src="midia/mascafe-casarosa.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não tem suporte para ouvir o áudio, <a href="midia/mascafe-casarosa.mp3">clique aqui</a> para realizar o download da música.</p>
+    </audio> 
+</body>
+</html>

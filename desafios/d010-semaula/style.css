@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format(opentype);
+}
+
+body {
+    background-color: rgb(177, 236, 177);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Cabeçalho */
+header {
+    /* Background de degradê */
+    background-image: linear-gradient(180deg, rgb(65, 192, 65), rgb(26, 90, 26));
+
+    /* Configuração da box */
+    padding: 20px;
+    margin: -10px;
+}
+
+/* Titulo principal do site */
+header > h1 {
+    text-align: center;
+    text-shadow: 1px 1px 12px rgb(99, 99, 99);
+    color: white;
+}
+
+/* subtitulo do site */
+header > p {
+    text-align: center;
+    color: white;
+}
+
+/* Links da área de navegação */
+nav > a { 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Interação com os links */
+a:hover {
+    color: rgb(65, 192, 65);
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    text-align: justify;
+
+    /* Configuração da box */
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 65%;
+    padding: 5px 20px 10px 20px;
+    box-shadow: 1px 1px 15px rgb(99, 99, 99);
+}
+
+/* Configuração dos titulos */
+main > h2, h3 {
+    font-family: 'idroid', sans-serif;
+    color: rgb(1, 102, 1);
+}
+
+/* Degradê dos h3's */
+main > h3 {
+    background-image: linear-gradient(90deg, rgba(0, 255, 0, 0.2), rgb(255, 255, 255))
+}
+
+/* Configuração da margem dos paragráfos */
+p {
+    text-indent: 20px;
+}
+
+/* Configuração das imagens dinamicas */
+main > picture, img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Configuração do background do player youtube */
+main > div {
+    background-color: green;
+}
+
+/* Configuração do player youtube */
+div > iframe {
+    border: none;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+p#topico-extra {
+    background-color: green;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+main > aside {
+    background-color: rgb(177, 236, 177);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+main > aside > ul {
+    list-style-type: "✔️ "
+}
+
+footer {
+    text-align: center;
+    background-color: green;
+    color: white;
+    margin-top: 30px;
+    padding: 10px;
+}
